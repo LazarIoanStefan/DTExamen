@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+</head>
+
+<body>
+    <a href="index.html">Home</a>
+    <div id="hey">
+        <h1>Adaugare carte noua</h1>
+        <label>Title</label>
+        <input type="text" id="title" name="title"><br><br>
+        <label>Author</label>
+        <input type="text" id="author" name="author"><br><br>
+        <label>Price</label>
+        <input type="text" id="price" name="price"><br><br>
+        <label>Publisher</label>
+        <input type="text" id="publisher" name="publisher"><br><br>
+        <label>Edition</label>
+        <input type="text" id="edition" name="edition"><br><br>
+        <label>Year</label>
+        <input type="text" id="year" name="year"><br><br>
+        <button v-on:click="addBook()">Add</button>
+
+        <p>{{message}}</p>
+
+    </div>
+    <script src="src/hey.js"></script>
+</body>
+
+</html>
