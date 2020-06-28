@@ -3,9 +3,9 @@
         <script type="text/javascript" src="libs/vue.js"></script>
         <script type="text/javascript" src="libs/axios.js"></script>
     </head>
-    <body>
+    <body style="background-color: aquamarine;">
         <a href="index.html">Home</a>
-        <div id="update">Actualizare carte cu id-ul: {{ id }} <br>
+        <div id="update" style="text-align: center; font-size: large;">Actualizare carte cu id-ul: {{ id }} <br>
             <div class="label">Title:</div>
             <input type="text" v-model="book.title"><br><br>
             <div class="label">Author:</div>
@@ -18,7 +18,7 @@
             <input type="text" v-model="book.edition"><br><br>
             <div class="label">Year:</div>
             <input type="text" v-model="book.year"><br><br>
-            <button  v-on:click="update(book.id)">Save</button>
+            <button  v-on:click="update(book.id)" >Save</button>
 
             <p>{{message}}</p>
 

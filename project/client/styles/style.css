@@ -1,11 +1,14 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin-top: 100px;
+  background-color: rgba(7, 221, 168, 0.486);
 }
 
 #app {
   width: 25%;
   margin: 0 auto 0 auto;
+  margin-top: 3%;
+  background-color: rgba(255, 72, 0, 0.479);
 }
 
 .user-list {
@@ -39,12 +42,12 @@ body {
 }
 
 .user-name {
-  width: 40%;
+  width: 25%;
   display: inline-block;
 }
 
 .user-city {
-  width: 40%;
+  width: 25%;
   display: inline-block;
 }
 

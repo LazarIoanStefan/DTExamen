@@ -17,7 +17,7 @@
 <body>
   <div id="app">
 
-    <div class="title">Books</div>
+    <div class="title" style="text-align: center; font: large;">Books</div>
 
     <p style="text-align: center" v-if="books.length == 0">No books found</p>
 
@@ -31,14 +31,14 @@
 
       <li v-for="book in books">
         <div class="">
-          <a :href="'details.html?id='+book.id">{{ book.title }}</a>
-          <span class=""><i>{{ book.author }}</i></span>
-          <button v-on:click="deleteBook(book.id)">Delete</button>
-          <a :href="'update.html?id='+book.id" target="_self">Update</a>
+          <a :href="'details.html?id='+book.id" style="display: inline-block;width: 24%;">{{ book.title }}</a>
+          <span class="" style="display: inline-block;width: 24%;"><i>{{ book.author }}</i></span>
+          <button v-on:click="deleteBook(book.id)" style="display: inline-block;width: 24%;">Delete</button>
+          <a :href="'update.html?id='+book.id" target="_self" style="display: inline-block;width: 24%;text-align: right;">Update</a>
         </div>
       </li>
     </ul>
-    <a :href="'hey.html'">ADD A NEW BOOK</a>
+    <a :href="'hey.html'" style="margin-left: 35%;">ADD A NEW BOOK</a>
   </div>
   <script src="src/app.js"></script>
 </body>

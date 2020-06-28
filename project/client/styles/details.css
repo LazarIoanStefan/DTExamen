@@ -1,6 +1,6 @@
 .container {
     display:flex;
-    background-color: #dedede;
+    background-color: blue;
     padding:1px;
     flex-wrap: wrap;
     flex-direction: row;
@@ -11,11 +11,13 @@
 .label {
     padding:20px;
     flex:1;
-    background-color:#fefefe;
+    background-color: cornflowerblue;
 }
 
 .value {
     padding: 20px;
-    background-color: #aaa;
+    background-color: crimson;
     flex:1;
+    font-size: x-large;
+    font-style: italic;
 }
